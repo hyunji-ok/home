@@ -1,38 +1,99 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 60px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home h1 {
+  font-size: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about img {
+  border-radius: 50%;
+  width: 150px;
+  margin-right: 20px;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: #f4f4f4;
+  margin: 10px;
+  padding: 20px;
+  width: 250px;
+}
+
+.skills .skill-icons {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.skills .skill-icons div{
+  margin: 5px;
+}
+
+.contact form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.contact form input, .contact form textarea {
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+}
+
+.contact form button {
+  padding: 10px 20px;
+  background-color: #28a745;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: none;
 }
