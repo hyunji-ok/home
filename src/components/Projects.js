@@ -1,4 +1,5 @@
 import React from 'react';
+import sample from '../images/sample_1280.jpg'
 
 function Projects() {
   return (
@@ -6,23 +7,33 @@ function Projects() {
       <h2>My Projects</h2>
       <div className="project-cards">
         <div className="card">
-          <img src="project1.jpg" alt="Project 1" />
+          <img src={sample} alt="Project 1" />
           <h3>Project 1</h3>
           <p>Description of the project...</p>
         </div>
         <div className="card">
-          <img src="project2.jpg" alt="Project 2" />
+          <img src={sample} alt="Project 2" />
           <h3>Project 2</h3>
           <p>Description of the project...</p>
         </div>
         <div className="card">
-          <img src="project2.jpg" alt="Project 2" />
-          <h3>Project 2</h3>
+          <img src={sample} alt="Project 3" />
+          <h3>Project 3</h3>
           <p>Description of the project...</p>
         </div>
         <div className="card">
-          <img src="project2.jpg" alt="Project 2" />
-          <h3>Project 2</h3>
+          <img src={sample} alt="Project 4" />
+          <h3>Project 4</h3>
+          <p>Description of the project...</p>
+        </div>
+        <div className="card">
+          <img src={sample} alt="Project 5" />
+          <h3>Project 5</h3>
+          <p>Description of the project...</p>
+        </div>
+        <div className="card">
+          <img src={sample} alt="Project 6" />
+          <h3>Project 6</h3>
           <p>Description of the project...</p>
         </div>
         {/* Add more cards as needed */}
