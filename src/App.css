@@ -1,15 +1,21 @@
+/* common */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/* header */
 header {
   background-color: #333;
-  padding: 10px;
+  padding: 10px 0px;
   color: white;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  min-width: 350px;
+  max-width: 1300px;
 }
 
 nav ul {
@@ -20,7 +26,8 @@ nav ul {
 }
 
 nav ul li {
-  margin: 10px
+  padding: 5px;
+  margin: 0px 5px;
 }
 
 nav a {
@@ -28,11 +35,25 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover {
+  color: rgba(255, 255, 255, 0.234);
+  text-decoration: none;
+}
+
+/* main */
+main {
+  min-width: 350px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* section */
 section {
   padding: 60px;
   text-align: center;
 }
 
+/* home section */
 .home h1 {
   font-size: 3rem;
 }
@@ -45,21 +66,29 @@ section {
   cursor: pointer;
 }
 
+/* about section */
 .about {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 
 .about img {
-  border-radius: 50%;
-  width: 150px;
+  /* border-radius: 50%; */
+  width: 300px;
+  /* aspect-ratio: auto; */
   margin-right: 20px;
 }
 
+.about .about-text {
+  text-align: left;
+}
+
+/* project section */
 .project-cards {
   display: flex;
   justify-content: center;
+  flex-flow: wrap;
 }
 
 .card {
@@ -69,16 +98,29 @@ section {
   width: 250px;
 }
 
-.skills .skill-icons {
+.card img {
+  width: 250px;
+}
+
+/* skills section */
+.skills .skill-items {
   display: flex;
   justify-content: center;
+  flex-flow: wrap;
   font-size: 2rem;
 }
 
-.skills .skill-icons div{
+.skills .skill-items .item {
+  width: 100px;
+  aspect-ratio: 1/1;
   margin: 5px;
+  padding: 5px;
+  /* border-style: solid;
+  border-color: #333;
+  border-radius: 100%; */
 }
 
+/* contact section */
 .contact form {
   display: flex;
   flex-direction: column;
