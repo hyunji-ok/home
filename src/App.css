@@ -69,19 +69,25 @@ section {
 /* about section */
 .about {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
 }
 
 .about img {
-  /* border-radius: 50%; */
-  width: 300px;
-  /* aspect-ratio: auto; */
+  width: 45%;
   margin-right: 20px;
 }
 
 .about .about-text {
+  width: 45%;
   text-align: left;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.carrier-cards {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
 }
 
 /* project section */
@@ -99,7 +105,8 @@ section {
 }
 
 .card img {
-  width: 250px;
+  width: 90%;
+  aspect-ratio: 2/1;
 }
 
 /* skills section */
@@ -115,9 +122,6 @@ section {
   aspect-ratio: 1/1;
   margin: 5px;
   padding: 5px;
-  /* border-style: solid;
-  border-color: #333;
-  border-radius: 100%; */
 }
 
 /* contact section */
@@ -138,4 +142,9 @@ section {
   background-color: #28a745;
   color: white;
   border: none;
+}
+
+footer {
+  background-color: #333;
+  height: 70px;
 }

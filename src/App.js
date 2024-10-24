@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import Home from './components/Home';
 import About from './components/About';
+import Carriers from './components/Carriers';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
@@ -15,6 +16,7 @@ function App() {
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#carriers">Carriers</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -29,6 +31,9 @@ function App() {
         <section id="about">
           <About />
         </section>
+        <section id="carriers">
+          <Carriers />
+        </section>
         <section id="projects">
           <Projects />
         </section>
@@ -39,6 +44,10 @@ function App() {
           <Contact />
         </section>
       </main>
+
+      <footer>
+
+      </footer>
       
     </div>
   );
