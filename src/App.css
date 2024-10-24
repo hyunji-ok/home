@@ -1,4 +1,8 @@
 /* common */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -75,13 +79,13 @@ section {
 .about img {
   width: 45%;
   margin-right: 20px;
+  border-radius: 50%;
 }
 
 .about .about-text {
   width: 45%;
   text-align: left;
   padding: 20px;
-  background-color: #f4f4f4;
 }
 
 .carrier-cards {
