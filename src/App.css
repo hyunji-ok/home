@@ -71,22 +71,18 @@ section {
 }
 
 /* about section */
-.about {
-  display: flex;
-  justify-content: center;
-}
-
-.about img {
-  width: 45%;
-  margin-right: 20px;
-  border-radius: 50%;
-}
-
-.about .about-text {
-  width: 45%;
+.about .about-item {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
   text-align: left;
-  padding: 20px;
 }
+
+.about .about-item img {
+  width: 100%;
+  margin: 0 auto;
+}
+
 
 .carrier-cards {
   display: flex;
