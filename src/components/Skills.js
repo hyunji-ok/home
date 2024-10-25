@@ -7,7 +7,7 @@ import { SiCreatereactapp } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import zustandImg from '../images/zustand.jpeg'
 import { SiRecoil } from "react-icons/si";
-import { SiChakraui } from "react-icons/si";
+// import { SiChakraui } from "react-icons/si";
 import { SiMui } from "react-icons/si";
 import { SiAxios } from "react-icons/si";
 import { SiJest } from "react-icons/si";
@@ -61,10 +61,10 @@ function Skills() {
         </div>
 
         {/* react 스타일링 */}
-        <div className="item">
+        {/* <div className="item">
           <SiChakraui size={50} color='#6BC4CA'/>
           <div>chakra ui</div>
-        </div>
+        </div> */}
         <div className="item">
           <SiMui size={50} color='#027BF8'/>
           <div>mui</div>
