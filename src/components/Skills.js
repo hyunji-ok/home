@@ -9,12 +9,18 @@ import zustandImg from '../images/zustand.jpeg'
 import { SiRecoil } from "react-icons/si";
 import { SiChakraui } from "react-icons/si";
 import { SiMui } from "react-icons/si";
+import { SiAxios } from "react-icons/si";
+import { SiJest } from "react-icons/si";
+import { SiTestinglibrary } from "react-icons/si";
+import { SiGithubpages } from "react-icons/si";
+import { SiGithubactions } from "react-icons/si";
 
 function Skills() {
   return (
     <div className="skills">
       <h2>Skills</h2>
       <div className="skill-items">
+        {/* front core three */}
         <div className="item">
           <FaHtml5 size={50} color='#DC4B26'/>
           <div>html</div>
@@ -27,10 +33,14 @@ function Skills() {
           <FaJs size={50} color='#E5C410'/>
           <div>js</div>
         </div>
+
+        {/* react core */}
         <div className="item">
           <FaReact size={50} color='#5DD4F5'/>
           <div>react</div>
         </div>
+
+        {/* react 프로젝트 생성 도구 */}
         <div className="item">
           <SiCreatereactapp size={50} color='#07CDA7'/>
           <div>cra</div>
@@ -39,6 +49,8 @@ function Skills() {
           <RiNextjsFill size={50} color='#000000'/>
           <div>next.js</div>
         </div>
+
+        {/* react 상태 관리 */}
         <div className="item">
           <img src={zustandImg} style={{width: "50px", height: "50px"}} alt='zustand-image'/>
           <div>zustand</div>
@@ -47,15 +59,54 @@ function Skills() {
           <SiRecoil size={50} color='#000000'/>
           <div>recoil</div>
         </div>
+
+        {/* react 스타일링 */}
         <div className="item">
           <SiChakraui size={50} color='#6BC4CA'/>
-          <div>chakra</div>
+          <div>chakra ui</div>
         </div>
         <div className="item">
           <SiMui size={50} color='#027BF8'/>
           <div>mui</div>
         </div>
-        {/* <i className="fab fa-js-square"></i> */}
+
+        {/* react 폼 관리 */}
+        {/* React Hook Form */}
+
+        {/* react 데이터 페칭 */}
+        <div className="item">
+          <SiAxios size={50} color='#5828DD'/>
+          <div>axios</div>
+        </div>
+        {/* React Query */}
+        {/* SWR */}
+
+        {/* react 테스팅 */}
+        <div className="item">
+          <SiJest size={50} color='#954057'/>
+          <div>jest</div>
+        </div>
+        <div className="item">
+          <SiTestinglibrary size={50} color='#D8342E'/>
+          <div>testing library</div>
+        </div>
+
+        {/* react 전역 데이터 관리 */}
+        {/* Apollo Client */}
+        {/* Relay */}
+
+        {/* 배포 */}
+        <div className="item">
+          <SiGithubpages size={50}/>
+          <div>github pages</div>
+        </div>
+
+        {/* ci/cd */}
+        <div className="item">
+          <SiGithubactions size={50} color='#1F84F8'/>
+          <div>github actions</div>
+        </div>
+
       </div>
     </div>
   );
