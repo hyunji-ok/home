@@ -1,6 +1,6 @@
 import React from 'react';
-import carrier1 from '../images/carrier1.png'
-import carrier2 from '../images/carrier2.png'
+import carrier1 from '../assets/images/carrier1.png'
+import carrier2 from '../assets/images/carrier2.png'
 import AlertDialog from './common/dialog';
 
 function Carriers() {

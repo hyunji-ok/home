@@ -5,7 +5,7 @@ import { FaJs } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { SiCreatereactapp } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
-import zustandImg from '../images/zustand.jpeg'
+import zustandImg from '../assets/images/zustand.jpeg'
 import { SiRecoil } from "react-icons/si";
 // import { SiChakraui } from "react-icons/si";
 import { SiMui } from "react-icons/si";

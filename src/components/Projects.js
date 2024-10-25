@@ -1,6 +1,6 @@
 import React from 'react';
-import project1 from '../images/project1_1280.jpg'
-import project2 from '../images/project2_1280.jpg'
+import project1 from '../assets/images/project1_1280.jpg'
+import project2 from '../assets/images/project2_1280.jpg'
 import AlertDialog from './common/dialog';
 // import project3 from '../images/project3_1280.jpg'
 // import project4 from '../images/project4_1280.jpg'
