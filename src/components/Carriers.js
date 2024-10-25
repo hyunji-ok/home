@@ -1,6 +1,6 @@
 import React from 'react';
-import carrier1 from '../images/carrier1_1280.jpg'
-import carrier2 from '../images/carrier2_1280.jpg'
+import carrier1 from '../images/carrier1.png'
+import carrier2 from '../images/carrier2.png'
 
 function Carriers() {
   return (
