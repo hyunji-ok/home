@@ -83,6 +83,10 @@ section {
   margin: 0 auto;
 }
 
+.about .about-text li {
+  line-height: 1.5rem;
+}
+
 
 .carrier-cards {
   display: flex;
