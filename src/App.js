@@ -6,7 +6,7 @@ import About from './components/About';
 import Carriers from './components/Carriers';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-import Contact from './components/Contact';
+// import Contact from './components/Contact';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
             <li><a href="#carriers">Carriers</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            {/* <li><a href="#contact">Contact</a></li> */}
           </ul>
         </nav>
       </header>
@@ -40,15 +40,14 @@ function App() {
         <section id="skills">
           <Skills />
         </section>
-        <section id="contact">
+        {/* <section id="contact">
           <Contact />
-        </section>
+        </section> */}
       </main>
 
       <footer>
-
+        <div>Copyright © hyunji-ok</div>
       </footer>
-      
     </div>
   );
 }
