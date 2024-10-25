@@ -5,7 +5,9 @@ import { FaJs } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { SiCreatereactapp } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
+import zustandImg from '../images/zustand.jpeg'
 import { SiRecoil } from "react-icons/si";
+import { SiChakraui } from "react-icons/si";
 import { SiMui } from "react-icons/si";
 
 function Skills() {
@@ -38,8 +40,16 @@ function Skills() {
           <div>next.js</div>
         </div>
         <div className="item">
+          <img src={zustandImg} style={{width: "50px", height: "50px"}} alt='zustand-image'/>
+          <div>zustand</div>
+        </div>
+        <div className="item">
           <SiRecoil size={50} color='#000000'/>
           <div>recoil</div>
+        </div>
+        <div className="item">
+          <SiChakraui size={50} color='#6BC4CA'/>
+          <div>chakra</div>
         </div>
         <div className="item">
           <SiMui size={50} color='#027BF8'/>
