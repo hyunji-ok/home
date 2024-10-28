@@ -1,3 +1,15 @@
+/* bring in normalize.css styles */
+@import-normalize;
+
+/*  */
+:root {
+  --primary-color: #333;
+  --accent-color: #007bff;
+  --success-color: #28a745;
+  --min-width: 350px;
+  --max-width: 1300px;
+}
+
 /* common */
 html {
   scroll-behavior: smooth;
@@ -11,7 +23,7 @@ body {
 
 /* header */
 header {
-  background-color: #333;
+  background-color: var(--primary-color);
   padding: 10px 0px;
   color: white;
   position: fixed;
@@ -38,6 +50,7 @@ header nav ul li {
 header nav a {
   color: white;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 header nav a:hover {
@@ -69,6 +82,11 @@ main section {
   color: white;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home button:hover {
+  background-color: #0056b3;
 }
 
 /* about section */
@@ -168,4 +186,22 @@ footer {
 }
 footer div {
   margin: auto;
+}
+
+
+/* 미디어 쿼리 추가 */
+@media screen and (max-width: 768px) {
+  .about .about-item {
+    width: 95%;
+  }
+  
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .contact form input, 
+  .contact form textarea {
+    width: 90%;
+  }
 }
