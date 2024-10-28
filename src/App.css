@@ -1,7 +1,7 @@
 /* bring in normalize.css styles */
 @import-normalize;
 
-/* root 색상과 레이아웃 관련 변수 */
+/* Color and layout variables */
 :root {
   --primary-color: #333;
   --accent-color: #007bff;
@@ -10,9 +10,7 @@
   --max-width: 1300px;
 }
 
-/* 기본 스타일 (모바일 우선) */
-
-/* 공통 스타일 */
+/* Global Styles */
 html {
   scroll-behavior: smooth;
 }
@@ -23,23 +21,28 @@ body {
   padding: 0;
 }
 
-/* header */
+/* Common Container */
+.container {
+  margin: 0 auto;
+  min-width: var(--min-width);
+}
+
+/* Header */
 header {
   background-color: var(--primary-color);
   padding: 10px 0;
   color: white;
   position: fixed;
-  margin: 0 auto;
   left: 0;
   right: 0;
-  min-width: 350px;
   z-index: 1;
+  text-align: center;
 }
 
 header nav ul {
   display: flex;
   justify-content: center;
-  list-style-type: none;
+  list-style: none;
   padding: 0;
 }
 
@@ -56,16 +59,14 @@ header nav a {
 
 header nav a:hover {
   color: rgba(255, 255, 255, 0.234);
-  text-decoration: none;
 }
 
-/* main */
+/* Main */
 main {
-  min-width: 350px;
   margin: 0 auto;
 }
 
-/* section */
+/* Section */
 main section {
   padding: 60px 0 0;
   text-align: center;
@@ -95,31 +96,33 @@ main section .about .about-item {
   margin: 0 auto;
   padding: 10px;
   text-align: left;
+  max-width: 800px;
 }
 
-main section .about .about-item img {
+main section .about img{
   width: 100%;
-  margin: 0 auto;
+  display: block;
 }
 
 main section .about .about-text li {
   line-height: 1.5rem;
 }
 
-/* carriers and projects */
-main section .carriers .carrier-cards,
-main section .projects .project-cards {
+/* Card Layouts */
+main section .carrier-cards,
+main section .project-cards,
+main section .skill-items {
   display: flex;
   justify-content: center;
-  flex-flow: wrap;
+  flex-wrap: wrap;
 }
 
-/* common style for cards */
 main section .card {
   background-color: #f4f4f4;
-  margin: 10px 0;
+  margin: 10px;
   padding: 20px;
   width: 100%;
+  max-width: 300px;
 }
 
 main section .card img {
@@ -133,13 +136,6 @@ main section .skills {
   margin: 0 auto;
 }
 
-main section .skills .skill-items {
-  display: flex;
-  justify-content: center;
-  flex-flow: wrap;
-  font-size: 2rem;
-}
-
 main section .skills .skill-items .item {
   width: 100px;
   aspect-ratio: 1/1;
@@ -147,7 +143,7 @@ main section .skills .skill-items .item {
   padding: 5px;
 }
 
-/* contact section */
+/* Contact */
 main section .contact form {
   display: flex;
   flex-direction: column;
@@ -167,13 +163,11 @@ main section .contact form button {
   border: none;
 }
 
-/* footer */
+/* Footer */
 footer {
   margin: 30px auto 0;
-  min-width: 350px;
   background-color: var(--primary-color);
   height: 70px;
-  text-align: center;
   color: white;
   display: flex;
 }
@@ -182,27 +176,19 @@ footer div {
   margin: auto;
 }
 
-/* Large screen adjustments */
+/* Media Query - Large Screen */
 @media screen and (min-width: 768px) {
-  header, footer {
+  .container, header, footer {
     max-width: var(--max-width);
   }
   
-  main {
-    max-width: 1200px;
-  }
-  
-  main section .about .about-item,
+
+  main section .about-item, 
   main section .skills {
     width: 80%;
   }
-  
-  main section .card {
-    width: 250px;
-    margin: 10px;
-  }
 
-  main section .contact form input, 
+  main section .contact form input,
   main section .contact form textarea {
     width: 300px;
   }

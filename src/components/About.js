@@ -5,8 +5,10 @@ function About() {
   return (
     <div className="about">
       <h2>About Me</h2>
-      <div className='about-item'>
-        <img src={about} alt="Profile" />
+      <div className='about-item container'>
+        <div className='about-image'>
+          <img src={about} alt="Profile" className='container' />
+        </div>
         <div className="about-text">
           <p>
             다음과 같은 점을 중요하게 생각합니다.

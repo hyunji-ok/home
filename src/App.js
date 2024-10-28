@@ -11,7 +11,7 @@ import Skills from './components/Skills';
 function App() {
   return (
     <div className="App">
-      <header>
+      <header className='container'>
         <nav>
           <ul>
             <li><a href="#home">Home</a></li>
@@ -24,7 +24,7 @@ function App() {
         </nav>
       </header>
 
-      <main>
+      <main className='container'>
         <section id="home">
           <Home />
         </section>
@@ -45,7 +45,7 @@ function App() {
         </section> */}
       </main>
 
-      <footer>
+      <footer className='container'>
         <div>Copyright © hyunji-ok</div>
       </footer>
     </div>
