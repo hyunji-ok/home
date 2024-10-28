@@ -1,7 +1,7 @@
 /* bring in normalize.css styles */
 @import-normalize;
 
-/*  */
+/* root 색상과 레이아웃 관련 변수 */
 :root {
   --primary-color: #333;
   --accent-color: #007bff;
@@ -10,7 +10,9 @@
   --max-width: 1300px;
 }
 
-/* common */
+/* 기본 스타일 (모바일 우선) */
+
+/* 공통 스타일 */
 html {
   scroll-behavior: smooth;
 }
@@ -24,14 +26,13 @@ body {
 /* header */
 header {
   background-color: var(--primary-color);
-  padding: 10px 0px;
+  padding: 10px 0;
   color: white;
   position: fixed;
   margin: 0 auto;
   left: 0;
   right: 0;
   min-width: 350px;
-  max-width: 1300px;
   z-index: 1;
 }
 
@@ -44,7 +45,7 @@ header nav ul {
 
 header nav ul li {
   padding: 5px;
-  margin: 0px 5px;
+  margin: 0 5px;
 }
 
 header nav a {
@@ -61,13 +62,12 @@ header nav a:hover {
 /* main */
 main {
   min-width: 350px;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
 /* section */
 main section {
-  padding: 60px 0 0 0;
+  padding: 60px 0 0;
   text-align: center;
 }
 
@@ -78,7 +78,7 @@ main section {
 
 .home button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: var(--accent-color);
   color: white;
   border: none;
   cursor: pointer;
@@ -91,7 +91,7 @@ main section {
 
 /* about section */
 .about .about-item {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
   padding: 10px;
   text-align: left;
@@ -106,26 +106,20 @@ main section {
   line-height: 1.5rem;
 }
 
-/* carriers section */
-.carriers .carrier-cards {
-  display: flex;
-  justify-content: center;
-  flex-flow: wrap;
-}
-
-/* project section */
+/* carriers and projects */
+.carriers .carrier-cards,
 .projects .project-cards {
   display: flex;
   justify-content: center;
   flex-flow: wrap;
 }
 
-/* carriers와 project section의 common style */
+/* common style for cards */
 .card {
   background-color: #f4f4f4;
-  margin: 10px;
+  margin: 10px 0;
   padding: 20px;
-  width: 250px;
+  width: 100%;
 }
 
 .card img {
@@ -135,7 +129,7 @@ main section {
 
 /* skills section */
 .skills {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -163,12 +157,12 @@ main section {
 .contact form input, .contact form textarea {
   margin: 10px;
   padding: 10px;
-  width: 300px;
+  width: 90%;
 }
 
 .contact form button {
   padding: 10px 20px;
-  background-color: #28a745;
+  background-color: var(--success-color);
   color: white;
   border: none;
 }
@@ -177,31 +171,39 @@ main section {
 footer {
   margin: 30px auto 0;
   min-width: 350px;
-  max-width: 1300px;
-  background-color: #333;
+  background-color: var(--primary-color);
   height: 70px;
   text-align: center;
   color: white;
   display: flex;
 }
+
 footer div {
   margin: auto;
 }
 
-
-/* 미디어 쿼리 추가 */
-@media screen and (max-width: 768px) {
-  .about .about-item {
-    width: 95%;
+/* Large screen adjustments */
+@media screen and (min-width: 768px) {
+  header, footer {
+    max-width: var(--max-width);
+  }
+  
+  main {
+    max-width: 1200px;
+  }
+  
+  .about .about-item,
+  .skills {
+    width: 80%;
   }
   
   .card {
-    width: 100%;
-    margin: 10px 0;
+    width: 250px;
+    margin: 10px;
   }
-  
+
   .contact form input, 
   .contact form textarea {
-    width: 90%;
+    width: 300px;
   }
 }
