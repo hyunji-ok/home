@@ -3,12 +3,20 @@
 import { css } from '@emotion/react';
 import React from 'react';
 import './App.css';
-import Home from './components/main/Home';
-import About from './components/main/About';
-import Carriers from './components/main/Carriers';
-import Products from './components/main/Products';
-import Skills from './components/main/Skills';
+import Home from 'components/main/Home';
+import About from 'components/main/About';
+import Carriers from 'components/main/Carriers';
+import Products from 'components/main/Products';
+import Skills from 'components/main/Skills';
 // import Contact from './components/Contact';
+
+const sections = [
+  { id: 'home', component: Home },
+  { id: 'about', component: About },
+  { id: 'carriers', component: Carriers },
+  { id: 'products', component: Products },
+  { id: 'skills', component: Skills }
+];
 
 function App() {
   return (
@@ -16,35 +24,19 @@ function App() {
       <header css={headerStyle}>
         <nav>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#carriers">Carriers</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#skills">Skills</a></li>
-            {/* <li><a href="#contact">Contact</a></li> */}
+            {sections.map(({ id, component }) => (
+              <li key={id}><a href={`#${id}`}>{id.charAt(0).toUpperCase() + id.slice(1)}</a></li>
+            ))}
           </ul>
         </nav>
       </header>
 
       <main css={mainStyle}>
-        <section id="home">
-          <Home />
-        </section>
-        <section id="about">
-          <About />
-        </section>
-        <section id="carriers">
-          <Carriers />
-        </section>
-        <section id="products">
-          <Products />
-        </section>
-        <section id="skills">
-          <Skills />
-        </section>
-        {/* <section id="contact">
-          <Contact />
-        </section> */}
+        {sections.map(({ id, component: Component }) => (
+          <section key={id} id={id}>
+            <Component />
+          </section>
+        ))}
       </main>
 
       <footer css={footerStyle}>
