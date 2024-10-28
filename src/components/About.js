@@ -28,6 +28,9 @@ function About() {
 }
 
 const aboutStyle = css`
+  p {
+    font-size: 1.2rem;
+  }
   .about-item {
     width: 95%;
     margin: 0 auto;
@@ -40,7 +43,8 @@ const aboutStyle = css`
     display: block;
   }
   .about-text li {
-    line-height: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 2.0rem;
   }
 `;
 

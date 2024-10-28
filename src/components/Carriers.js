@@ -39,7 +39,7 @@ const carriersStyle = css`
     margin: 10px;
     padding: 20px;
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     & img {
       width: 90%;
       aspect-ratio: 2/1;

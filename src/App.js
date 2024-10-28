@@ -68,6 +68,7 @@ const headerStyle = css`
   nav ul li {
     padding: 5px;
     margin: 0 5px;
+    font-size: 1.5rem;
   }
 
   nav a {
@@ -84,6 +85,7 @@ const headerStyle = css`
 const mainStyle = css`
   max-width: var(--max-width);
   margin: auto;
+  padding-top: 60px; // 고정 헤더를 위한 여백 추가
 
   section {
     padding: 60px 0 0;

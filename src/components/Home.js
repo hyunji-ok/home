@@ -16,6 +16,12 @@ function Home() {
 const homeStyle = css`
   h1 {
     font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
   }
 
   button {
