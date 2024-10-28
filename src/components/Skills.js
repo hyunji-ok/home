@@ -50,6 +50,9 @@ function Skills() {
           <div>next.js</div>
         </div>
 
+        {/* react routing */}
+        {/* react-router */}
+
         {/* react 상태 관리 */}
         <div className="item">
           <img src={zustandImg} style={{width: "50px", height: "50px"}} alt='zustand-image'/>
