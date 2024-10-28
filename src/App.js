@@ -1,4 +1,6 @@
 // App.js
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
 import React from 'react';
 import './App.css';
 import Home from './components/Home';
@@ -11,7 +13,7 @@ import Skills from './components/Skills';
 function App() {
   return (
     <div className="App">
-      <header className='container'>
+      <header css={headerStyle}>
         <nav>
           <ul>
             <li><a href="#home">Home</a></li>
@@ -24,7 +26,7 @@ function App() {
         </nav>
       </header>
 
-      <main className='container'>
+      <main css={mainStyle}>
         <section id="home">
           <Home />
         </section>
@@ -45,11 +47,57 @@ function App() {
         </section> */}
       </main>
 
-      <footer className='container'>
+      <footer css={footerStyle}>
         <div>Copyright © hyunji-ok</div>
       </footer>
     </div>
   );
 }
+
+const headerStyle = css`
+  /* max-width: var(--max-width);
+  margin: auto; */
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    padding: 5px;
+    margin: 0 5px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+`;
+
+const mainStyle = css`
+  max-width: var(--max-width);
+  margin: auto;
+
+  section {
+    padding: 60px 0 0;
+    text-align: center;
+  }
+`;
+
+const footerStyle = css`
+  /* max-width: var(--max-width); */
+  margin: 30px auto 0;
+  display: flex;
+  div {
+    margin: auto;
+  }
+`;
 
 export default App;

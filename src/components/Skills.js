@@ -1,3 +1,5 @@
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
 import React from 'react';
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
@@ -17,7 +19,7 @@ import { SiGithubactions } from "react-icons/si";
 
 function Skills() {
   return (
-    <div className="skills">
+    <div className="skills" css={skillsStyle}>
       <h2>Skills</h2>
       <div className="skill-items">
         {/* front core three */}
@@ -115,4 +117,20 @@ function Skills() {
   );
 }
 
+const skillsStyle = css`
+  width: 95%;
+  margin: 0 auto;
+  max-width: 800px;
+  .skill-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 100px;
+    aspect-ratio: 1/1;
+    margin: 5px;
+    padding: 5px;
+  }
+`;
 export default Skills;

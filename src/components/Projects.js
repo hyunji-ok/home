@@ -1,3 +1,5 @@
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
 import React from 'react';
 import project1 from '../assets/images/project1_1280.jpg'
 import project2 from '../assets/images/project2_1280.jpg'
@@ -9,7 +11,7 @@ import AlertDialog from './common/dialog';
 
 function Projects() {
   return (
-    <div className="projects">
+    <div className="projects" css={projectsStyle}>
       <h2>My Projects</h2>
       <div className="project-cards">
         <AlertDialog>
@@ -53,5 +55,25 @@ function Projects() {
     </div>
   );
 }
+
+const projectsStyle = css`
+  .project-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    background-color: #f4f4f4;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    & img {
+      width: 90%;
+      aspect-ratio: 2/1;
+    }
+  }
+
+`;
 
 export default Projects;

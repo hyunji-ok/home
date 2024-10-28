@@ -1,3 +1,5 @@
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
 import React from 'react';
 import carrier1 from '../assets/images/carrier1.png'
 import carrier2 from '../assets/images/carrier2.png'
@@ -5,7 +7,7 @@ import AlertDialog from './common/dialog';
 
 function Carriers() {
   return (
-    <div className="carrier">
+    <div className="carriers" css={carriersStyle}>
         <h2>Carriers</h2>
         <div className="carrier-cards">
             <AlertDialog>
@@ -25,5 +27,24 @@ function Carriers() {
     </div>
   );
 }
+
+const carriersStyle = css`
+  .carrier-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    background-color: #f4f4f4;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    & img {
+      width: 90%;
+      aspect-ratio: 2/1;
+    }
+  }
+`;
 
 export default Carriers;

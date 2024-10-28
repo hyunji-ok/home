@@ -1,13 +1,15 @@
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
 import React from 'react';
 import about from '../assets/images/about_1280.jpg'
 
 function About() {
   return (
-    <div className="about">
+    <div className="about" css={aboutStyle}>
       <h2>About Me</h2>
-      <div className='about-item container'>
+      <div className='about-item'>
         <div className='about-image'>
-          <img src={about} alt="Profile" className='container' />
+          <img src={about} alt="Profile" />
         </div>
         <div className="about-text">
           <p>
@@ -24,5 +26,22 @@ function About() {
     </div>
   );
 }
+
+const aboutStyle = css`
+  .about-item {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: left;
+    max-width: 800px;
+  }
+  img {
+    width: 100%;
+    display: block;
+  }
+  .about-text li {
+    line-height: 1.5rem;
+  }
+`;
 
 export default About;
