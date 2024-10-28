@@ -3,11 +3,11 @@
 import { css } from '@emotion/react';
 import React from 'react';
 import './App.css';
-import Home from './components/Home';
-import About from './components/About';
-import Carriers from './components/Carriers';
-import Products from './components/Products';
-import Skills from './components/Skills';
+import Home from './components/main/Home';
+import About from './components/main/About';
+import Carriers from './components/main/Carriers';
+import Products from './components/main/Products';
+import Skills from './components/main/Skills';
 // import Contact from './components/Contact';
 
 function App() {

@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import React from 'react';
-import about from '../assets/images/about_1280.jpg'
+import about from '../../assets/images/about_1280.jpg'
 
 function About() {
   return (
