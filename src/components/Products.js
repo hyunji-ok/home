@@ -3,7 +3,7 @@ import { css } from '@emotion/react';
 import React from 'react';
 import product1 from '../assets/images/product1_1280.jpg'
 import product2 from '../assets/images/product2_1280.jpg'
-import AlertDialog from './common/dialog';
+import { Link } from 'react-router-dom';
 // import product3 from '../images/product3_1280.jpg'
 // import product4 from '../images/product4_1280.jpg'
 // import product5 from '../images/product5_1280.jpg'
@@ -14,21 +14,19 @@ function Products() {
     <div className="products" css={productsStyle}>
       <h2>Products</h2>
       <div className="product-cards">
-        <AlertDialog>
+        <Link to={`products/sns`}>
           <div className="card">
-            <img src={product1} alt="Product 1" />
-            <h3>Product 1</h3>
-            <p>Description of the product...</p>
+            <img src={product1} alt="sns" />
+            <h3>SNS</h3>
           </div>
-        </AlertDialog>
+        </Link>
         
-        <AlertDialog>
+        <Link to={`products/personal-homepage`}>
           <div className="card">
-            <img src={product2} alt="Product 2" />
-            <h3>Product 2</h3>
-            <p>Description of the product...</p>
+            <img src={product2} alt="personal-homepage" />
+            <h3>개인 홈페이지</h3>
           </div>
-        </AlertDialog>
+        </Link>
         
         {/* <div className="card">
           <img src={product3} alt="Product 3" />
@@ -72,6 +70,11 @@ const productsStyle = css`
       width: 90%;
       aspect-ratio: 2/1;
     }
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #1976d2;
   }
 
 `;
