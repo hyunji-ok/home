@@ -72,11 +72,11 @@ main section {
 }
 
 /* home section */
-.home h1 {
+main section .home h1 {
   font-size: 2.5rem;
 }
 
-.home button {
+main section .home button {
   padding: 10px 20px;
   background-color: var(--accent-color);
   color: white;
@@ -85,62 +85,62 @@ main section {
   transition: background-color 0.3s ease;
 }
 
-.home button:hover {
+main section .home button:hover {
   background-color: #0056b3;
 }
 
 /* about section */
-.about .about-item {
+main section .about .about-item {
   width: 95%;
   margin: 0 auto;
   padding: 10px;
   text-align: left;
 }
 
-.about .about-item img {
+main section .about .about-item img {
   width: 100%;
   margin: 0 auto;
 }
 
-.about .about-text li {
+main section .about .about-text li {
   line-height: 1.5rem;
 }
 
 /* carriers and projects */
-.carriers .carrier-cards,
-.projects .project-cards {
+main section .carriers .carrier-cards,
+main section .projects .project-cards {
   display: flex;
   justify-content: center;
   flex-flow: wrap;
 }
 
 /* common style for cards */
-.card {
+main section .card {
   background-color: #f4f4f4;
   margin: 10px 0;
   padding: 20px;
   width: 100%;
 }
 
-.card img {
+main section .card img {
   width: 90%;
   aspect-ratio: 2/1;
 }
 
 /* skills section */
-.skills {
+main section .skills {
   width: 95%;
   margin: 0 auto;
 }
 
-.skills .skill-items {
+main section .skills .skill-items {
   display: flex;
   justify-content: center;
   flex-flow: wrap;
   font-size: 2rem;
 }
 
-.skills .skill-items .item {
+main section .skills .skill-items .item {
   width: 100px;
   aspect-ratio: 1/1;
   margin: 5px;
@@ -148,19 +148,19 @@ main section {
 }
 
 /* contact section */
-.contact form {
+main section .contact form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.contact form input, .contact form textarea {
+main section .contact form input, .contact form textarea {
   margin: 10px;
   padding: 10px;
   width: 90%;
 }
 
-.contact form button {
+main section .contact form button {
   padding: 10px 20px;
   background-color: var(--success-color);
   color: white;
@@ -192,18 +192,18 @@ footer div {
     max-width: 1200px;
   }
   
-  .about .about-item,
-  .skills {
+  main section .about .about-item,
+  main section .skills {
     width: 80%;
   }
   
-  .card {
+  main section .card {
     width: 250px;
     margin: 10px;
   }
 
-  .contact form input, 
-  .contact form textarea {
+  main section .contact form input, 
+  main section .contact form textarea {
     width: 300px;
   }
 }
