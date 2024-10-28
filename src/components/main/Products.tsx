@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import React from 'react';
-import product1 from '../../assets/images/product1_1280.jpg'
-import product2 from '../../assets/images/product2_1280.jpg'
+import product1 from 'assets/images/product1_1280.jpg'
+import product2 from 'assets/images/product2_1280.jpg'
 import { Link } from 'react-router-dom';
 // import product3 from '../images/product3_1280.jpg'
 // import product4 from '../images/product4_1280.jpg'

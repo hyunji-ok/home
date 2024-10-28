@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import React from 'react';
-// import Home from '../../components/main/Home';
-import About from '../../components/main/About';
+// import Home from 'components/main/Home';
+import About from 'components/main/About';
 
 const sections = [
     { id: 'about', component: About }

@@ -1,9 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import React from 'react';
-import carrier1 from '../../assets/images/carrier1.png'
-import carrier2 from '../../assets/images/carrier2.png'
-import AlertDialog from '../common/dialog';
+import carrier1 from 'assets/images/carrier1.png'
+import carrier2 from 'assets/images/carrier2.png'
+import AlertDialog from 'components/common/dialog';
 
 function Carriers() {
   return (
