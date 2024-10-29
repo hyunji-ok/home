@@ -8,15 +8,24 @@ import App from './App';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import PersonalHomepage from './routes/products/PersonalHomepage';
+import Layout from 'components/layout/Layout';
 
 const router = createBrowserRouter([
   {
     path: "/home",
-    element: <App />,
+    element: (
+      <Layout>
+        <App />
+      </Layout>
+    ),
   },
   {
     path: "/home/products/:productName",
-    element: <PersonalHomepage />,
+    element: (
+      <Layout>
+        <PersonalHomepage />
+      </Layout>
+    ),
   },
 ]);
 
