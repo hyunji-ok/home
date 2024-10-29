@@ -8,6 +8,7 @@ import About from 'components/main/About';
 import Carriers from 'components/main/Carriers';
 import Products from 'components/main/Products';
 import Skills from 'components/main/Skills';
+import { Link } from 'react-router-dom';
 // import Contact from './components/Contact';
 
 const sections = [
@@ -24,9 +25,15 @@ function App() {
       <header css={headerStyle}>
         <nav>
           <ul>
-            {sections.map(({ id, component }) => (
-              <li key={id}><a href={`#${id}`}>{id.charAt(0).toUpperCase() + id.slice(1)}</a></li>
-            ))}
+            <li>
+              <Link to="/home">main</Link>
+            </li>
+            <li>
+              <Link to="https://github.com/hyunji-ok" target='_blank'>github</Link>
+            </li>
+            <li>
+              <Link to="https://blog.naver.com/hyunjiok10" target='_blank'>blog</Link>
+            </li>
           </ul>
         </nav>
       </header>
