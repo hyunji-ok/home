@@ -6,6 +6,9 @@
 ## description
 - 개인 홈페이지
 
+## feature
+- 개인소개, 경력소개, 제품소개, 기술소개
+
 ## technology
 - node: v18
 - typescript: v4
