@@ -7,9 +7,11 @@ import { FaJs } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { SiCreatereactapp } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
+import { SiReactrouter } from "react-icons/si";
 import zustandImg from 'assets/images/zustand.jpeg'
 import { SiRecoil } from "react-icons/si";
 // import { SiChakraui } from "react-icons/si";
+import emotionImg from 'assets/images/emotion.png'
 import { SiMui } from "react-icons/si";
 import { SiAxios } from "react-icons/si";
 import { SiJest } from "react-icons/si";
@@ -53,7 +55,10 @@ function Skills() {
         </div>
 
         {/* react routing */}
-        {/* react-router */}
+        <div className="item">
+          <SiReactrouter size={50} color='#000000'/>
+          <div>react-router</div>
+        </div>
 
         {/* react 상태 관리 */}
         <div className="item">
@@ -66,10 +71,10 @@ function Skills() {
         </div>
 
         {/* react 스타일링 */}
-        {/* <div className="item">
-          <SiChakraui size={50} color='#6BC4CA'/>
-          <div>chakra ui</div>
-        </div> */}
+        <div className="item">
+          <img src={emotionImg} style={{width: "50px", height: "50px"}} alt='emotion-image'/>
+          <div>emotion</div>
+        </div>
         <div className="item">
           <SiMui size={50} color='#027BF8'/>
           <div>mui</div>
