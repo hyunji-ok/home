@@ -72,14 +72,14 @@ function Carriers() {
             <AlertDialog company="성원애드피아" contents={swAdpiaConstents} >
               <div className="card">
                   <img src={carrier1} alt="carrier 1" />
-                  <h3>성원애드피아</h3>
+                  <h3>성원애드피아(클릭)</h3>
               </div>
             </AlertDialog>
             
             <AlertDialog company="플래티어" contents={plateerConstents} >
               <div className="card">
                   <img src={carrier2} alt="carrier 2" />
-                  <h3>플래티어</h3>
+                  <h3>플래티어(클릭)</h3>
               </div>
             </AlertDialog>
         </div>

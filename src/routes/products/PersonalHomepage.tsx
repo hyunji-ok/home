@@ -29,20 +29,17 @@ function PersonalHomepage() {
           {/* 소개 */}
           <Box sx={{padding: '60px 0 0'}} textAlign="center">
             <h1>
-              개인 홈페이지 사이트 소개
+              product info
             </h1>
-            <p>
-              제가 만든 개인 홈페이지 사이트를 소개하는 곳입니다.
-            </p>
           </Box>
 
           {/* Project Overview */}
           <Box my={8}>
             <h2>
-              프로젝트 개요
+              개요
             </h2>
             <ul>
-              <li>이 웹사이트는 개인 소개와 products를 공유하는 목적으로 개발되었습니다.</li>
+              <li>이 웹사이트는 개인소개와 products를 공유하는 목적으로 개발되었습니다.</li>
               <li>React를 사용하여 구현했습니다.</li>
             </ul>
           </Box>
@@ -53,7 +50,7 @@ function PersonalHomepage() {
               주요 기능
             </h2>
             <ul>
-              <li>프로젝트 포트폴리오 목록 보기 및 상세 페이지</li>
+              <li>개인소개, 경력소개, 제품소개, 기술소개</li>
             </ul>
           </Box>
 
@@ -63,7 +60,15 @@ function PersonalHomepage() {
               사용한 기술 스택
             </h2>
             <ul>
-              <li>이 프로젝트는 React, 그리고 Material UI를 사용하여 구축되었습니다.</li>
+              <li>node: v18</li>
+              <li>typescript: v4</li>
+              <li>react: v18</li>
+              <li>frame-work: create-react-app</li>
+              <li>routing: react-router</li>
+              <li>styling: css, emotion, mui</li>
+              <li>test: jest, react-testing-library</li>
+              <li>deploy: github pages</li>
+              <li>ci/cd: github actions</li>
             </ul>
           </Box>
 
@@ -82,18 +87,30 @@ function PersonalHomepage() {
                 </ul>
               </li>
               <li>normailize는 내장된 기능이 있음</li>
-              <ul>
-                <li>app.css에 @import-normalize 추가함</li>
-              </ul>
-              
-              
+                <ul>
+                  <li>app.css에 @import-normalize 추가함</li>
+                </ul>
+              <li>절대경로 설정</li>
+                <ul>
+                  <li>다양한 방법이 있지만 cra 공식문서에서 권장하는 방식은 tsconfig에 다음 내용 추가</li>
+                  <ul>
+                    <li>"baseUrl": "src"</li>
+                  </ul>
+                </ul>
+              <li>css는 전역적으로 설정되기 때문에 나눠서 관리해야 할 필요가 있음</li>
+                <ul>
+                  <li>css: 글로벌 설정</li>
+                  <li>emotion: 각 컴포넌트의 전체적인 설정</li>
+                  <li>mui sx props: 세부적인 설정</li>
+                </ul>
+              <li>mui에서는 styled component 대신 emotion을 권장. 따라서 emotion을 채택함</li>
             </ul>
           </Box>
 
           {/* 외부링크 */}
           <Box my={8}>
             <h2>
-              바로 가기
+              바로 가기 링크
             </h2>
             <Button variant="contained" color="primary" href="https://hyunji-ok.github.io/home/" target="_blank">
               web
