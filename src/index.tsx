@@ -9,6 +9,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import PersonalHomepage from './routes/products/PersonalHomepage';
 import Layout from 'components/layout/Layout';
+import TestPage from 'routes/test/TestPage';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,14 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <PersonalHomepage />
+      </Layout>
+    ),
+  },
+  {
+    path: "/home/test/test-page",
+    element: (
+      <Layout>
+        <TestPage />
       </Layout>
     ),
   },

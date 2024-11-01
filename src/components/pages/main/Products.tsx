@@ -23,6 +23,13 @@ function Products() {
             <h3>개인 홈페이지(클릭)</h3>
           </div>
         </Link>
+
+        {/* <Link to={`test/test-page`}>
+          <div className="card">
+            <img src={product2} alt="test-page" />
+            <h3>test-page</h3>
+          </div>
+        </Link> */}
       </div>
     </div>
   );
