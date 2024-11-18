@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/home/static/css/main.5c8b82ed.css",
-    "main.js": "/home/static/js/main.9bafcf76.js",
+    "main.js": "/home/static/js/main.626a0fde.js",
     "static/js/453.4b8d8fd0.chunk.js": "/home/static/js/453.4b8d8fd0.chunk.js",
     "static/media/carrier2.png": "/home/static/media/carrier2.4a055f609c73f6b776c2.png",
     "static/media/emotion.png": "/home/static/media/emotion.e7c5171d414020397499.png",
     "static/media/carrier1.png": "/home/static/media/carrier1.76bc8f47bf8b233959ea.png",
+    "static/media/product1_1280.jpg": "/home/static/media/product1_1280.e74d58c6576ff7c9df25.jpg",
     "static/media/product2_1280.jpg": "/home/static/media/product2_1280.c146225d599208a7a301.jpg",
     "static/media/about_1280.jpg": "/home/static/media/about_1280.a0a27b692b1e3cbc5f21.jpg",
     "index.html": "/home/index.html",
     "main.5c8b82ed.css.map": "/home/static/css/main.5c8b82ed.css.map",
-    "main.9bafcf76.js.map": "/home/static/js/main.9bafcf76.js.map",
+    "main.626a0fde.js.map": "/home/static/js/main.626a0fde.js.map",
     "453.4b8d8fd0.chunk.js.map": "/home/static/js/453.4b8d8fd0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c8b82ed.css",
-    "static/js/main.9bafcf76.js"
+    "static/js/main.626a0fde.js"
   ]
 }
