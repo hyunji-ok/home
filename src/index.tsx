@@ -10,6 +10,7 @@ import reportWebVitals from './reportWebVitals';
 import PersonalHomepage from './routes/products/PersonalHomepage';
 import Layout from 'components/layout/Layout';
 import TestPage from 'routes/test/TestPage';
+import Tmb from 'routes/products/Tmb';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,15 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/home/products/:productName",
+    path: "/home/products/tmb",
+    element: (
+      <Layout>
+        <Tmb />
+      </Layout>
+    ),
+  },
+  {
+    path: "/home/products/personal-homepage",
     element: (
       <Layout>
         <PersonalHomepage />

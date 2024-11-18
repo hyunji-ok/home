@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import React from 'react';
-// import product1 from 'assets/images/product1_1280.jpg'
+import product1 from 'assets/images/product1_1280.jpg'
 import product2 from 'assets/images/product2_1280.jpg'
 import { Link } from 'react-router-dom';
 
@@ -10,16 +10,16 @@ function Products() {
     <div className="products" css={productsStyle}>
       <h2>Products</h2>
       <div className="product-cards">
-        {/* <Link to={`products/sns`}>
+        <Link to={`products/tmb`}>
           <div className="card">
-            <img src={product1} alt="sns" />
-            <h3>SNS</h3>
+            <img src={product2} alt="tmb" />
+            <h3>TMB(클릭)</h3>
           </div>
-        </Link> */}
+        </Link>
         
         <Link to={`products/personal-homepage`}>
           <div className="card">
-            <img src={product2} alt="personal-homepage" />
+            <img src={product1} alt="personal-homepage" />
             <h3>개인 홈페이지(클릭)</h3>
           </div>
         </Link>
