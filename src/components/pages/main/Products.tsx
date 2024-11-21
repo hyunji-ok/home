@@ -10,6 +10,13 @@ function Products() {
     <div className="products" css={productsStyle}>
       <h2>Products</h2>
       <div className="product-cards">
+        <Link to={`products/enjoy-my-place`}>
+          <div className="card">
+            <img src={product2} alt="enjoy-my-place" />
+            <h3>ENJOY-MY-PLACE(클릭)</h3>
+          </div>
+        </Link>
+
         <Link to={`products/tmb`}>
           <div className="card">
             <img src={product2} alt="tmb" />

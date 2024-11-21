@@ -11,6 +11,7 @@ import PersonalHomepage from './routes/products/PersonalHomepage';
 import Layout from 'components/layout/Layout';
 import TestPage from 'routes/test/TestPage';
 import Tmb from 'routes/products/Tmb';
+import EnjoyMyPlace from 'routes/products/EnjoyMyPlace';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,14 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <App />
+      </Layout>
+    ),
+  },
+  {
+    path: "/home/products/enjoy-my-place",
+    element: (
+      <Layout>
+        <EnjoyMyPlace />
       </Layout>
     ),
   },

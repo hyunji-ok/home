@@ -5,7 +5,7 @@ import { Container, Box, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
   
-function Tmb() {
+function EnjoyMyPlace() {
   return (
     <div>
       <header css={headerStyle}>
@@ -39,7 +39,7 @@ function Tmb() {
               개요
             </h2>
             <ul>
-              <li>이 웹사이트는 텍스트로 이야기 하는 것을 목적으로 만들어 졌습니다.</li>
+              <li>이 웹사이트는 내 주변 맛집 및 문화시설을 찾는 것을 목표로 구현하였습니다.</li>
               <li>React를 사용하여 구현했습니다.</li>
             </ul>
           </Box>
@@ -50,7 +50,7 @@ function Tmb() {
               주요 기능
             </h2>
             <ul>
-              <li>로그인, 회원가입, 글 작성, 글 수정, 글 삭제, 글 읽기</li>
+              <li>내 주변 맛집 및 문화시설 찾기</li>
             </ul>
           </Box>
 
@@ -60,7 +60,7 @@ function Tmb() {
               사용한 기술 스택
             </h2>
             <ul>
-              <li>node: v18</li>
+              <li>node: v22</li>
               <li>typescript: v4</li>
               <li>react: v18</li>
               <li>frame-work: create-react-app</li>
@@ -68,6 +68,7 @@ function Tmb() {
               <li>styling: css, emotion, mui</li>
               <li>test: jest, react-testing-library</li>
               <li>backend(baas): firebase</li>
+              <li>library: kakao-map-api-sdk</li>
               <li>deploy: vercel</li>
             </ul>
           </Box>
@@ -94,13 +95,13 @@ function Tmb() {
             <h2>
               바로 가기 링크
             </h2>
-            <Button variant="contained" color="primary" href="https://tmb-lovat.vercel.app/" target="_blank">
+            <Button variant="contained" color="primary" href="https://dev-enjoy-my-place.vercel.app/" target="_blank">
               web
             </Button>
-            <Button variant="contained" color="primary" href="https://tmb-lovat.vercel.app/" target="_blank" disabled>
+            <Button variant="contained" color="primary" href="https://dev-enjoy-my-place.vercel.app/" target="_blank" disabled>
               iOS(개발중)
             </Button>
-            <Button variant="contained" color="primary" href="https://tmb-lovat.vercel.app/" target="_blank" disabled>
+            <Button variant="contained" color="primary" href="https://dev-enjoy-my-place.vercel.app/" target="_blank" disabled>
               Android(개발중)
             </Button>
           </Box>
@@ -178,4 +179,4 @@ const footerStyle = css`
   }
 `;
 
-export default Tmb;
+export default EnjoyMyPlace;
